@@ -70,3 +70,30 @@ def test_storage_creates_state_on_first_touch():
     store.get(7)
     store.get(7)
     assert store.size == 1
+
+
+def test_mosaic_refusal_is_told_apart_from_other_errors():
+    from bot.handlers import is_mosaic_forbidden
+
+    assert is_mosaic_forbidden("Bad Request: CUSTOM_EMOJI_INVALID")
+    assert is_mosaic_forbidden("Bad Request: not enough rights to send custom emoji")
+    assert is_mosaic_forbidden("premium subscription required")
+    assert not is_mosaic_forbidden("Bad Request: message text is empty")
+    assert not is_mosaic_forbidden("Too Many Requests: retry after 12")
+
+
+def test_quoted_env_values_survive_systemd_and_compose(monkeypatch):
+    """Значение со спецсимволом должно читаться одинаково при любом способе запуска."""
+    from bot.config import _env_str
+
+    monkeypatch.setenv("X_SUFFIX", '"| @{bot}"')
+    assert _env_str("X_SUFFIX", "") == "| @{bot}"
+
+    monkeypatch.setenv("X_SUFFIX", "'| @{bot}'")
+    assert _env_str("X_SUFFIX", "") == "| @{bot}"
+
+    monkeypatch.setenv("X_SUFFIX", "| @{bot}")
+    assert _env_str("X_SUFFIX", "") == "| @{bot}"
+
+    monkeypatch.delenv("X_SUFFIX", raising=False)
+    assert _env_str("X_SUFFIX", "fallback") == "fallback"

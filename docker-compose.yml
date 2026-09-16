@@ -1,0 +1,16 @@
+# Запуск через Docker: ffmpeg уже внутри образа.
+#   cp .env.example .env   # впишите BOT_TOKEN
+#   docker compose up -d
+
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    # Бот не принимает входящих соединений: polling сам ходит к api.telegram.org.
+    network_mode: bridge
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

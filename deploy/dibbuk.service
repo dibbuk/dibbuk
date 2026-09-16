@@ -1,0 +1,44 @@
+# systemd-юнит для бота. Установка:
+#   sudo cp deploy/dibbuk.service /etc/systemd/system/
+#   sudo systemctl daemon-reload && sudo systemctl enable --now dibbuk
+
+[Unit]
+Description=dibbuk — Telegram-бот для нарезки картинок в эмодзи-паки
+Documentation=https://github.com/dibbuk/dibbuk
+After=network-online.target
+Wants=network-online.target
+# Бот перезапускается неограниченно: временная недоступность Telegram
+# не должна навсегда гасить службу.
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=dibbuk
+Group=dibbuk
+WorkingDirectory=/opt/dibbuk
+EnvironmentFile=/opt/dibbuk/.env
+ExecStart=/opt/dibbuk/.venv/bin/python -m bot.main
+
+# Бот держит долгий polling-коннект: перезапускаем всегда, но без штормов.
+Restart=always
+RestartSec=5
+
+# Логи уходят в journald.
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=dibbuk
+
+# Пишем только во временные файлы, всё остальное закрыто.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/dibbuk
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target

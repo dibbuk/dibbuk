@@ -8,6 +8,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from aiogram import Bot, F, Router
+from aiogram.exceptions import TelegramBadRequest
 from aiogram.filters import Command, CommandStart
 from aiogram.types import (
     CallbackQuery,
@@ -282,12 +283,35 @@ async def on_run(
         body += texts.RESULT_BRANDED
     await status.edit_text(body, disable_web_page_preview=True)
 
-    await _send_mosaic(query, pack, plan)
+    await _send_mosaic(query, pack, plan, settings)
     app_storage.reset_job(query.from_user.id)
 
 
-async def _send_mosaic(query: CallbackQuery, pack, plan) -> None:
-    """Отправляет картинку, собранную из кастомных эмодзи прямо в тексте."""
+#: Признаки того, что Telegram запретил боту отправлять кастомные эмодзи.
+_MOSAIC_FORBIDDEN = (
+    "custom_emoji",
+    "custom emoji",
+    "premium",
+    "not enough rights",
+)
+
+
+def is_mosaic_forbidden(error: str) -> bool:
+    """Отличает запрет на кастомные эмодзи от любой другой ошибки отправки."""
+    lowered = error.lower()
+    return any(marker in lowered for marker in _MOSAIC_FORBIDDEN)
+
+
+async def _send_mosaic(query: CallbackQuery, pack, plan, settings: Settings) -> None:
+    """Отправляет картинку, собранную из кастомных эмодзи прямо в тексте.
+
+    Функция необязательная: пак к этому моменту уже создан и отдан пользователю.
+    Если Telegram отказывает, гасим её на весь процесс, чтобы не долбиться
+    в запрет на каждом паке, и один раз пишем в лог, что нужно сделать.
+    """
+    if not settings.enable_mosaic:
+        return
+
     mosaic = pack.mosaic(plan)
     if mosaic.is_empty:
         return
@@ -306,6 +330,18 @@ async def _send_mosaic(query: CallbackQuery, pack, plan) -> None:
     ]
     try:
         await query.message.answer(mosaic.text, entities=entities, parse_mode=None)
+    except TelegramBadRequest as exc:
+        if is_mosaic_forbidden(str(exc)):
+            settings.enable_mosaic = False
+            log.warning(
+                "Telegram запретил боту отправлять кастомные эмодзи (%s). "
+                "Мозаика отключена. Включите Telegram Premium на аккаунте владельца "
+                "бота либо купите боту юзернейм на Fragment. Паки при этом создаются "
+                "как обычно.",
+                exc,
+            )
+            return
+        log.warning("не удалось отправить мозаику: %s", exc)
     except Exception:  # noqa: BLE001 — мозаика необязательна, пак уже отдан
         log.warning("не удалось отправить мозаику", exc_info=True)
 

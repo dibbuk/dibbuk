@@ -114,9 +114,25 @@ adduser --system --group --home /opt/dibbuk dibbuk
 ## Шаг 6. Выложить код
 
 ```bash
-git clone https://github.com/dibbuk/dibbuk.git /opt/dibbuk/app
+git clone https://github.com/dibbuk/emopack_bot.git /opt/dibbuk/app
 cd /opt/dibbuk/app
-git checkout claude/amazing-euler-olu05f
+```
+
+Репозиторий приватный, поэтому сервер попросит авторизацию. Простой путь —
+[персональный токен GitHub](https://github.com/settings/tokens) с правом `repo`:
+вставьте его вместо пароля, логин обычный. Аккуратный путь — deploy key,
+он даёт доступ только к этому репозиторию:
+
+```bash
+ssh-keygen -t ed25519 -C dibbuk-deploy -f ~/.ssh/dibbuk -N ""
+cat ~/.ssh/dibbuk.pub
+```
+
+Добавьте вывод в настройки репозитория, раздел Deploy keys, и клонируйте по SSH:
+
+```bash
+GIT_SSH_COMMAND="ssh -i ~/.ssh/dibbuk" \
+  git clone git@github.com:dibbuk/emopack_bot.git /opt/dibbuk/app
 ```
 
 Соберите виртуальное окружение и поставьте бота:
@@ -229,6 +245,12 @@ git pull
 systemctl restart dibbuk
 ```
 
+Если клонировали по SSH, `git pull` тоже пойдёт через ключ:
+
+```bash
+GIT_SSH_COMMAND="ssh -i ~/.ssh/dibbuk" git pull
+```
+
 ---
 
 ## Вариант через Docker
@@ -238,9 +260,8 @@ ffmpeg уже внутри образа, ставить его отдельно 
 
 ```bash
 apt install -y docker.io docker-compose-v2 git
-git clone https://github.com/dibbuk/dibbuk.git /opt/dibbuk
+git clone https://github.com/dibbuk/emopack_bot.git /opt/dibbuk
 cd /opt/dibbuk
-git checkout claude/amazing-euler-olu05f
 cp .env.example .env
 nano .env          # впишите BOT_TOKEN
 docker compose up -d

@@ -4,7 +4,7 @@
 
 [Unit]
 Description=dibbuk — Telegram-бот для нарезки картинок в эмодзи-паки
-Documentation=https://github.com/dibbuk/dibbuk
+Documentation=https://github.com/dibbuk/emopack_bot
 After=network-online.target
 Wants=network-online.target
 # Бот перезапускается неограниченно: временная недоступность Telegram

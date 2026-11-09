@@ -12,13 +12,13 @@ A new PAN precursor production facility was being built in Alabuga. The IT and i
 
 I coordinated the IT and automation scope and the interaction between project participants, design organizations, contractors and international technology partners.
 
-## Scope coordinated
+## What I delivered
 
-- Requirements for design organizations and alignment of the IT / OT scope.
-- IT infrastructure, networks, server systems and structured cabling.
-- Access control, CCTV and interfaces with fire safety and information security systems.
-- Construction and installation coordination, commissioning, testing, acceptance and readiness for production launch.
-- Coordination with international partners from Italy and Germany on the implementation of **Schneider Electric SCADA**.
+- I prepared requirements for design organizations and aligned the IT / OT scope.
+- I coordinated delivery of IT infrastructure, networks, server systems and structured cabling.
+- I coordinated access control, CCTV and interfaces with fire safety and information security systems.
+- I coordinated construction and installation, commissioning, testing, acceptance and production-launch readiness.
+- I coordinated international partners from Italy and Germany during implementation of **Schneider Electric SCADA**.
 
 ## Industrial scale
 
@@ -26,11 +26,11 @@ I coordinated the IT and automation scope and the interaction between project pa
 - Several thousand instrumentation and control devices.
 - SCADA implementation based on Schneider Electric technology.
 
-A separate greenfield assignment was the IT delivery for the wind blade production facility in Ulyanovsk, including the IT environment for **120+ users**.
+I also coordinated IT delivery for the wind blade production facility in Ulyanovsk, including the IT environment for **120+ users**.
 
 ## Outcome and recognition
 
-The PAN precursor plant project reached production launch with the IT and automation workstream delivered through the construction and commissioning lifecycle.
+I delivered the IT and automation workstream through construction and commissioning, supporting the PAN precursor plant's production launch.
 
 I received the title **Person of the Year of Rosatom** as part of the project team for the successful work on this project.
 

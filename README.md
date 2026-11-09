@@ -24,6 +24,14 @@ I am comfortable translating between business goals and technical execution: cla
 | **7** | enterprises where IT infrastructure was built from the ground up |
 | **1** | *Person of the Year of Rosatom* — recognition for the PAN precursor plant project |
 
+## Leadership scope and business outcomes
+
+- Led cross-functional delivery environments of **60+ participants**, coordinating two external development teams and internal business and technology functions; business and systems analysts reported directly to me.
+- Managed project budgets up to **RUB 300M+**; in the Rosatom portfolio, optimized selected project budgets by **up to 40%** without loss of quality.
+- In a separate infrastructure integration project at Rusatom Energy Projects, reduced project cost by **15%** while delivering a protected IT environment for 150 workstations.
+- As Head of IT Operations, led a **5-person** team responsible for approximately **200 servers and 500 network devices**; service availability was **98%** and IT-function satisfaction was at least **95%**.
+- In the Mars / Royal Canin MES scope, delivered 14 modules, moved 20+ critical processes to alternative solutions, and supported real-time production KPI visibility.
+
 ## What I bring
 
 - **End-to-end project delivery** — business case, scope, requirements, planning, execution, testing, acceptance, go-live, and handover.
@@ -104,6 +112,13 @@ Across projects, I have been responsible for:
 
 **Methods and tools:** Waterfall, Agile, hybrid delivery, IPMA, Jira, MS Project, Yandex Tracker, WBS, backlog management, risk management, stakeholder management, and project reporting.
 
+## Selected case studies
+
+- [MES localization and production digitalization — Mars / Royal Canin](case-studies/mes-royal-canin.md)
+- [M&A IT integration — two businesses transitioned in 48 hours](case-studies/ma-integration-48-hours.md)
+- [Greenfield industrial project — IT/OT for a PAN precursor plant](case-studies/greenfield-pan-precursor.md)
+- [Project delivery artifacts — illustrative templates](case-studies/delivery-artifacts.md)
+
 ## Technology landscape
 
 **Enterprise applications:** MES, WMS, LIMS; ERP integration (including Navision); 1C; ELMA365  
@@ -146,4 +161,4 @@ Open to complex projects across industries. Industrial and enterprise technology
 
 ---
 
-*This profile summarizes selected experience. Detailed project case studies and supporting artifacts can be added as the portfolio develops.*
+*This profile summarizes selected experience. Detailed case studies and illustrative delivery artifacts are available in the case-studies folder.*

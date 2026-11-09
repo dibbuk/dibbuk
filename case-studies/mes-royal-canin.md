@@ -36,7 +36,7 @@ I led the full delivery lifecycle: from business case, requirements and solution
 
 ## Measurable outcomes
 
-- **20+ critical production and laboratory processes** moved to alternative corporate solutions, reducing exposure to vendor withdrawal and production downtime risks.
+- I **migrated 20+ critical production and laboratory processes** to alternative corporate solutions, reducing exposure to vendor withdrawal and production downtime risks.
 - I analyzed **100+ processes** and prioritized critical processes for migration and automation.
 - I reduced data discrepancies by **10%** in the implemented scope through automation and elimination of manual data entry.
 - ROI figures recorded for implemented process scope: **Green — 21%; Blue — 28%**.

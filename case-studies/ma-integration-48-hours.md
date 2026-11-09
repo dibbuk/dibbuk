@@ -14,15 +14,15 @@ My responsibilities across the M&A workstream included IT due diligence, integra
 
 ## What I did
 
-- Coordinated the IT transition of **two acquired businesses simultaneously**.
+- I led the IT transition of **two acquired businesses simultaneously**.
 - Organized the move into the corporate domain and IT environment after the transaction.
-- Managed dependencies and transition risks around access to systems, technology data and infrastructure.
-- Coordinated stakeholders and technical teams to complete the transition without interrupting production or business processes.
-- Developed a repeatable IT integration plan for acquired assets, informed by the wider experience of integrating **six assets** into the division's digital ecosystem.
+- I managed dependencies and mitigated transition risks around access to systems, technology data and infrastructure.
+- I coordinated stakeholders and technical teams and completed the transition without interrupting production or business processes.
+- I developed a repeatable IT integration plan for acquired assets, drawing on my experience integrating **six assets** into the division's digital ecosystem.
 
 ## Outcome
 
-- Both businesses were transitioned into the corporate domain within **48 hours after the deal**.
+- I transitioned both businesses into the corporate domain within **48 hours after the deal**.
 - Production and business processes continued **without downtime**.
 - The experience contributed to a standard IT M&A integration plan used as a repeatable basis for subsequent integrations.
 

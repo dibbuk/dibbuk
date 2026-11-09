@@ -80,7 +80,7 @@ Built and transformed enterprise IT environments across a growing, geographicall
 - Built IT infrastructure from the ground up at **7 enterprises**.
 - Supported a growing environment spanning 20+ companies and 2,000+ employees in scope.
 - Led infrastructure modernization across networks, servers, storage, virtualization, data centers, and resilient architecture.
-- Coordinated large-scale technology substitution initiatives: 600+ workstations migrated to Astra Linux; 3,000+ mailboxes; video conferencing across 40+ meeting rooms; telephony and messaging for 1,000+ users.
+- I led large-scale technology substitution initiatives: **migrated 600+ workstations to Astra Linux and 3,000+ mailboxes**, deployed video conferencing across 40+ meeting rooms, and delivered telephony and messaging for 1,000+ users.
 - Led modernization of server and network platforms, including virtualization and Russian hardware and software solutions.
 - Delivered cybersecurity initiatives involving SIEM, vulnerability management, AV, firewalls, PAM, DLP, and regulatory compliance.
 - As IT Operations Lead, managed a team of five administrators and DevOps engineers, with responsibility for approximately 200 servers and 500 network devices.

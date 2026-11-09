@@ -6,7 +6,7 @@
 
 A Russian production facility needed to replace a foreign MES solution and move critical production and laboratory workflows away from manual work and legacy tools affected by vendor restrictions.
 
-The assignment covered the full delivery lifecycle: from business case, requirements and solution alignment through development, integration, testing, go-live and transition to support.
+I led the full delivery lifecycle: from business case, requirements and solution alignment through development, integration, testing, go-live and transition to support.
 
 ## My role and delivery scope
 
@@ -29,16 +29,16 @@ The assignment covered the full delivery lifecycle: from business case, requirem
 ## Solution delivered
 
 - Custom MES core and **14 modules**, covering **40+ processes**.
-- Integrations with **Navision ERP, 1C:WMS and ELMA365**.
-- Production and equipment integration using **Kafka, SCADA, OPC UA and Historian**.
+- I integrated MES with **Navision ERP, 1C:WMS and ELMA365**.
+- I coordinated production and equipment integration using **Kafka, SCADA, OPC UA and Historian**.
 - Real-time Control Point dashboards for production KPIs, including TRS / OEE, ATS, productivity, energy consumption, incidents, CAPA and audit results.
-- A Continuous Improvement Process roadmap for further MES development and migration of remaining production processes.
+- I developed a Continuous Improvement Process roadmap for further MES development and migration of remaining production processes.
 
 ## Measurable outcomes
 
 - **20+ critical production and laboratory processes** moved to alternative corporate solutions, reducing exposure to vendor withdrawal and production downtime risks.
-- **100+ processes** analyzed; critical processes prioritized for migration and automation.
-- Data discrepancies reduced by **10%** through automation and removal of manual data entry in the implemented scope.
+- I analyzed **100+ processes** and prioritized critical processes for migration and automation.
+- I reduced data discrepancies by **10%** in the implemented scope through automation and elimination of manual data entry.
 - ROI figures recorded for implemented process scope: **Green — 21%; Blue — 28%**.
 
 ## What this case demonstrates

@@ -30,7 +30,7 @@ I am comfortable translating between business goals and technical execution: cla
 - Managed project budgets up to **RUB 300M+**; in the Rosatom portfolio, optimized selected project budgets by **up to 40%** without loss of quality.
 - In a separate infrastructure integration project at Rusatom Energy Projects, reduced project cost by **15%** while delivering a protected IT environment for 150 workstations.
 - As Head of IT Operations, led a **5-person** team responsible for approximately **200 servers and 500 network devices**; service availability was **98%** and IT-function satisfaction was at least **95%**.
-- In the Mars / Royal Canin MES scope, delivered 14 modules, moved 20+ critical processes to alternative solutions, and supported real-time production KPI visibility.
+- In the Mars / Royal Canin MES scope, I delivered 14 modules, **migrated 20+ critical processes to alternative solutions**, and enabled real-time production KPI visibility.
 
 ## What I bring
 
@@ -54,7 +54,7 @@ Led the full lifecycle of a localized, custom-built MES implementation replacing
 - Coordinated requirements, business cases, functional and non-functional specifications, architecture reviews, development, testing, acceptance, cutover, go-live, and handover.
 - Integrated MES with **Navision ERP, 1C:WMS, and ELMA365**.
 - Connected production systems and equipment through infrastructure modernization and integration technologies, including **Kafka, SCADA, OPC UA, and Historian**.
-- Led analysis of 100+ manual or legacy-supported processes and migration of 20+ critical processes into corporate systems.
+- I analyzed 100+ manual or legacy-supported processes and **migrated 20+ critical processes** into corporate systems.
 - Enabled real-time production KPI dashboards, including OEE/TRS, ATS, productivity, energy consumption, incidents, CAPA, and audit results.
 
 **Delivery scale:** project budget of RUB 80M+; cross-functional team of 60+.

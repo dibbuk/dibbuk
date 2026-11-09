@@ -22,6 +22,7 @@ I am comfortable translating between business goals and technical execution: cla
 | **20+** | enterprises and production sites in project scope |
 | **6** | acquired businesses integrated into a corporate IT environment |
 | **7** | enterprises where IT infrastructure was built from the ground up |
+| **1** | *Person of the Year of Rosatom* — recognition for the PAN precursor plant project |
 
 ## What I bring
 
@@ -121,12 +122,16 @@ Across projects, I have been responsible for:
 - **TTK** — LAN Engineer, Nov 2012 – Jun 2015
 - **Rostelecom** — Communications Engineer, Dec 2009 – Oct 2012
 
-## Education & professional development
+## Professional development
+
+- **Project Management** — Moscow School of Management SKOLKOVO.
+- **Project Management** — Pavel Alferov.
+- **Rosatom Corporate Academy** — IPMA Level D preparation (ICB4), project management, and project risk management.
+- **Leadership development** — Rosatom Corporate Academy; professional planning, delegation, and execution control (Alexander Friedman).
+
+## Education
 
 - Moscow Technical University of Communications and Informatics — incomplete higher education.
-- IPMA Level D preparation and project management training.
-- Project Management — Moscow School of Management SKOLKOVO.
-- Rosatom Corporate Academy — project management, risk management, and leadership development.
 
 ## Languages
 
